@@ -7,4 +7,4 @@
 2. update the size on loading process
 used function 'updateBox' 
 
-didn't use JS and CSS pages cuz it was simple practice.
+I didn't use JS and CSS pages because it was simple practice.
