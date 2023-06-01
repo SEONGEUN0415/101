@@ -22,24 +22,41 @@
     #boxSelected{
     background-color:brown;
     }
+
+    .buttons{
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+   
     </style>
 </head>
 
 <body>
+    <section class="buttons">
+        <button onclick="moveBy()" >click to scroll by 100th pixel(Y)</button>
+        <button onclick ="moveTo()" id="button">click to scroll to the 100th pixel(Y)</button>
+        <button onclick ="moveToSpecial()" id ="toSpecial">click to scroll into the special box</button>
     
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>        
-    <div id="boxSelected"></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    
+    </section>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>        
+        <div id="boxSelected"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+        
+
 <script>
+// -- show the coordinate
     const selected = document.querySelector('#boxSelected');
     selected.addEventListener('click',showNumber
     )
@@ -49,10 +66,21 @@
     function showNumber (e){
     console.log(rect)
     console.log(`client: ${e.clientX}, ${e.clientY}`)
-    console.log(`page: ${e.pageX, e.pageY}`);
-   
-}
+    console.log(`page: ${e.pageX, e.pageY}`);}
 
+// -- click the buttons to move to the certain coordinates
+        function moveBy(){
+            window.scrollBy(0, 100);
+        };
+
+        function moveTo(){
+            window.scrollTo(0,100)
+        };
+        function moveToSpecial(){
+        document.querySelector("#boxSelected").scrollIntoView();
+        
+        }
 </script>
 </body>
+
 </html>
