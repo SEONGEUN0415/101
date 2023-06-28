@@ -5,42 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rabbit</title>
+    <script src="https://kit.fontawesome.com/fdf75b0975.js" crossorigin="anonymous"></script>
     <style>
         body {
             background-color: black;
             display: flex;
             flex-direction: column;
         }
-        .button {
+        button {
             background-color: tomato;
             color: white;
             padding: 10px;
             margin: auto;
             border-radius: 10px;
+            border: none;
+            font-size: large; 
         }
         .button img{
             width:  20px;
         }
-        .items{
-            margin-top: 20px;
-        }
+        
 
         .items {
             display:flex;
             flex-direction: column;
             width: 100px;
             margin: auto;
-            
-
-            
+            margin-top: 20px;
         }
-        
+        i{
+            position: fixed;
+            right: 80px;
+            bottom: 80px;
+            color: white;
+            background-color: tomato;
+            font-size: 100px;
+            width: 100px;
+            border-radius: 50px;
+
+        }
         
     </style>
     
 </head>
 <body>
-    <div class="button">find a rabbit <img src="img/rabbit.png"></div>
+    <button class="button" onclick="moveTo()">find a rabbit <img src="img/rabbit.png"></button>
     <div class="items">
     <img class ="carrot" src="img/carrot.png" alt="carrot">
     <img class ="carrot" src="img/carrot.png" alt="carrot">
@@ -63,10 +72,23 @@
     <img class ="carrot" src="img/carrot.png" alt="carrot">
     <img class ="carrot" src="img/carrot.png" alt="carrot">
     <img class ="carrot" src="img/carrot.png" alt="carrot">
-
     </div> 
+    <i onclick="moveTop()" class="fa-regular fa-circle-up"></i>
+    
     <script>
-
+        
+        const rabbit = document.querySelector('.rabbit');
+        
+        function moveTo(){
+            rabbit.scrollIntoView({behavior:"smooth", block:"center"});
+        }
+        function moveTop(){
+            window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+            });
+        }
     </script>
 </body>
 </html>
