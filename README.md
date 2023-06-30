@@ -2,10 +2,10 @@
  ## chap01: clicke the box to show coordinates
  
 1. bring up the size whenever it's resized
- used 'addEventListner' object 
-![image](https://user-images.githubusercontent.com/110333484/231063807-1c857348-a0fb-4e8e-82bc-a3d8779193bb.png)
+ used 'addEventListner' object
+<img src="https://user-images.githubusercontent.com/110333484/231063807-1c857348-a0fb-4e8e-82bc-a3d8779193bb.png" width="600" hight="400"> 
 
-2. update the size on loading process
+3. update the size on loading process
 used function 'updateBox' 
 
 - JS and CSS files were not generated since it was a simple practice.
@@ -22,7 +22,7 @@ used function 'updateBox'
 
 => scrollBy(), scrollTo(), scrollIntoView()
 
-![image](https://github.com/SEONGEUN0415/101/assets/110333484/9934354e-4bcd-4a4a-b1a4-4df15f8aa946)
+<img src="https://github.com/SEONGEUN0415/101/assets/110333484/9934354e-4bcd-4a4a-b1a4-4df15f8aa946" width="600" height="400"/>
 
 ------ 
 
@@ -42,6 +42,16 @@ used function 'updateBox'
  2. Make a responsible function wih JS
 - 'mousemove event' has been used
 
+ 3. Improve rendering
+- Transform has been used instead of setting top and left
+
+    <img src = "https://github.com/SEONGEUN0415/101/assets/110333484/a814779c-c463-4bb9-b945-df2147d899fc.png" width="600" height="400"/>
+```
+    vertical.style.transform = `translate(${x}px, 0)`;
+    horizontal.style.transform = `translate(0, ${y}px)`;
+    target.style.transform = `translate(${x-targetHalfWidth}px, ${y-targetHalfHeight}px)`;
+    coordinates.style.transform = `translate(${x}px, ${y}px)`;
+```
 ------
 
  ## chap04: find a rabbit by using button
