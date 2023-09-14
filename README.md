@@ -22,13 +22,14 @@ used function 'updateBox'
 
 => scrollBy(), scrollTo(), scrollIntoView()
 
-<img src="https://github.com/SEONGEUN0415/101/assets/110333484/9934354e-4bcd-4a4a-b1a4-4df15f8aa946" width="600" height="400"/>
+<img src="https://github.com/SEONGEUN0415/101/assets/110333484/c0dac756-3c32-4d0a-b702-1de96dd356cd" width="600" height="400">
 
 ------ 
 
  ## chap03: make a target with showing coordinates
- <img src="https://github.com/SEONGEUN0415/101/assets/110333484/f8a0637e-7456-455e-b73c-50842a70537e.png" width="600" height="400"/>
-
+ 
+ <img src="https://github.com/SEONGEUN0415/101/assets/110333484/d18c0430-3660-4fd9-9345-e168e3a8a0eb"  width="600" height="400">
+ 
  1. Make a structure and design it with HTML and CSS
 
 - transform is used to change the position percisely
@@ -45,7 +46,6 @@ used function 'updateBox'
  3. Improve rendering
 - Transform has been used instead of setting top and left
 
-    <img src = "https://github.com/SEONGEUN0415/101/assets/110333484/a814779c-c463-4bb9-b945-df2147d899fc.png" width="600" height="400"/>
 ```
     vertical.style.transform = `translate(${x}px, 0)`;
     horizontal.style.transform = `translate(0, ${y}px)`;
