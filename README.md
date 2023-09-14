@@ -67,9 +67,18 @@ used function 'updateBox'
 <img src="https://github.com/SEONGEUN0415/101/assets/110333484/647f8637-7a39-491c-a180-cd3100617823" width="400" height="300">
 <img src="https://github.com/SEONGEUN0415/101/assets/110333484/77644b0d-96cf-4536-a30d-618a6ca554b6" width="400" height="300">
 
-### The differenc between onclick and addEvenListenr?
+### The difference between onclick and addEvenListenr?
 addEventListener does not work in the older versions of some browsers, meanwhile, onclick is compatible with all browsers.
 addEvenListener function can attach multiple events to a particular element while onclick function can attach only one event.
 addEventListener cannot link HTML and JavaScript files.
 
+-----
+ ## chap05: shopping list
+ <image src="https://github.com/SEONGEUN0415/101/assets/110333484/477c4599-c81a-4d3f-8183-29b46b4e71bd" width="600" height="400">
+
+Used method: creatElement(), setAttribute(), removeChild(), appendChild(), append(), focus()
+
+### The difference between append and appendchild method
+Element.append() allows you to also append string objects, whereas Node.appendChild() only accepts Node objects.
+e.g) append(function's name) => possible 
     
