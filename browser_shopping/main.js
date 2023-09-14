@@ -1,38 +1,66 @@
 'use strict'
 
 const add = document.querySelector('.add');
-const input = document.querySelector('.text')
-const items = document.querySelector('.items');
+const input = document.querySelector('.input')
+const content = document.querySelector('.content');
 
+/*
+list new items
+*/
+function onAdd(){
 
-//버튼누르면 value 값 붙이기
-add.addEventListener('click',()=>{
-      on();
-      
-    })
+const text = input.value;
+if(text ===''){
+  input.focus();
+  return;
+}
 
-function on(){
-    
-    // create a div element(item)
-    const item = document.createElement("div");
-    item.setAttribute('class','item');
+const newItem = creatItem(text);
+  
+content.append(newItem);
 
-    // add the item div on the items div
-    items.appendChild(item);
+newItem.scrollIntoView({behavior:"smooth"});
 
-    // add the text node to the item div
-    const inputValue = document.createTextNode(`${input.value}`);
-    item.appendChild(inputValue);
+input.value = "";
+input.focus();
+}
 
-    //create a trashcan
-    const trashCan = document.createElement('div');
-    trashCan.setAttribute('class','trashCan');
-    trashCan.innerHTML = `
+function creatItem(text){
+
+  const items = document.createElement('li');
+  items.setAttribute('class','items'); 
+  const item = document.createElement('div');
+  item.setAttribute('class','item'); 
+  content.appendChild(items);
+  items.appendChild(item);
+  
+  const item__name = document.createElement('span');
+  item__name.setAttribute('class','item__name')
+  item__name.innerHTML = text;
+  item.appendChild(item__name);
+  
+  const item__remove = document.createElement('div');
+  item__remove.setAttribute('class','item__remove');
+  item__remove.innerHTML = `
     <i class="fa-solid fa-trash-can"></i>
     `
-    // add the trashcan icon to the item div
-    item.appendChild(trashCan);
+    item.appendChild(item__remove);
+    item__remove.addEventListener('click',()=>{
+    content.removeChild(items);
+    input.focus();
+  });
+    return items
 
-}
+};
+
+input.addEventListener("keydown", (event)=> {
+    if (event.keyCode === 13) {
+        onAdd();
+    }
+});
+
+add.addEventListener('click',()=>{
+  onAdd();
+});
 
 
