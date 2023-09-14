@@ -64,8 +64,8 @@ used function 'updateBox'
  2. 'onclick'method has been used on button that moves browser to Rabbit and the top
 - 'scrollIntoView', 'scrollTo' APIs 
 
-<img src="https://github.com/SEONGEUN0415/101/assets/110333484/e2f51785-d724-47fd-9224-a6c05f1f6bf3.png" width="400" height="300"/>
-<img src="https://github.com/SEONGEUN0415/101/assets/110333484/270099a0-7785-4a38-b12f-69af6a75e17e.png" width="400 height="200"/>
+<img src="https://github.com/SEONGEUN0415/101/assets/110333484/647f8637-7a39-491c-a180-cd3100617823" width="400" height="300">
+<img src="https://github.com/SEONGEUN0415/101/assets/110333484/77644b0d-96cf-4536-a30d-618a6ca554b6" width="400" height="300">
 
 ### The differenc between onclick and addEvenListenr?
 addEventListener does not work in the older versions of some browsers, meanwhile, onclick is compatible with all browsers.
