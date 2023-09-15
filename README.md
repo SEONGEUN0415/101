@@ -22,13 +22,14 @@ used function 'updateBox'
 
 => scrollBy(), scrollTo(), scrollIntoView()
 
-<img src="https://github.com/SEONGEUN0415/101/assets/110333484/9934354e-4bcd-4a4a-b1a4-4df15f8aa946" width="600" height="400"/>
+<img src="https://github.com/SEONGEUN0415/101/assets/110333484/c0dac756-3c32-4d0a-b702-1de96dd356cd" width="600" height="400">
 
 ------ 
 
  ## chap03: make a target with showing coordinates
- <img src="https://github.com/SEONGEUN0415/101/assets/110333484/f8a0637e-7456-455e-b73c-50842a70537e.png" width="600" height="400"/>
-
+ 
+ <img src="https://github.com/SEONGEUN0415/101/assets/110333484/d18c0430-3660-4fd9-9345-e168e3a8a0eb"  width="600" height="400">
+ 
  1. Make a structure and design it with HTML and CSS
 
 - transform is used to change the position percisely
@@ -45,7 +46,6 @@ used function 'updateBox'
  3. Improve rendering
 - Transform has been used instead of setting top and left
 
-    <img src = "https://github.com/SEONGEUN0415/101/assets/110333484/a814779c-c463-4bb9-b945-df2147d899fc.png" width="600" height="400"/>
 ```
     vertical.style.transform = `translate(${x}px, 0)`;
     horizontal.style.transform = `translate(0, ${y}px)`;
@@ -64,12 +64,21 @@ used function 'updateBox'
  2. 'onclick'method has been used on button that moves browser to Rabbit and the top
 - 'scrollIntoView', 'scrollTo' APIs 
 
-<img src="https://github.com/SEONGEUN0415/101/assets/110333484/e2f51785-d724-47fd-9224-a6c05f1f6bf3.png" width="400" height="300"/>
-<img src="https://github.com/SEONGEUN0415/101/assets/110333484/270099a0-7785-4a38-b12f-69af6a75e17e.png" width="400 height="200"/>
+<img src="https://github.com/SEONGEUN0415/101/assets/110333484/647f8637-7a39-491c-a180-cd3100617823" width="400" height="300">
+<img src="https://github.com/SEONGEUN0415/101/assets/110333484/77644b0d-96cf-4536-a30d-618a6ca554b6" width="400" height="300">
 
-### The differenc between onclick and addEvenListenr?
+### The difference between onclick and addEvenListenr?
 addEventListener does not work in the older versions of some browsers, meanwhile, onclick is compatible with all browsers.
 addEvenListener function can attach multiple events to a particular element while onclick function can attach only one event.
 addEventListener cannot link HTML and JavaScript files.
 
+-----
+ ## chap05: shopping list
+ <image src="https://github.com/SEONGEUN0415/101/assets/110333484/477c4599-c81a-4d3f-8183-29b46b4e71bd" width="600" height="400">
+
+Used method: creatElement(), setAttribute(), removeChild(), appendChild(), append(), focus()
+
+### The difference between append and appendchild method
+Element.append() allows you to also append string objects, whereas Node.appendChild() only accepts Node objects.
+e.g) append(function's name) => possible 
     
