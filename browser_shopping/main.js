@@ -1,6 +1,6 @@
 'use strict'
 
-const add = document.querySelector('.add');
+const add = document.querySelector('.footer__add');
 const input = document.querySelector('.input')
 const content = document.querySelector('.content');
 
